@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+:root {
+    --dark-font-color-title: #173f5f;
+    --nave-light-blue:#20639b;
+    --teal-green: #3caea3; 
+    --farting-yellow:#F6D55C; 
+    --laranja-orange:#ed553b;
+    --light-font-color: #e5f2fc;
+    --light-font-color-title:#c9dded;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2%;
+    
+}
+
+
+.title h1 {
+    color: var(--nave-light-blue);
+    font-size: 4rem;
+    letter-spacing: 4px;
+    font-family: 'Shadows Into Light Two', cursive;
+    transform: rotate(3deg);
+
+}
+
+.left-content, .right-content{
+    width: 45%;
+    height: auto;
+}
+
+.right-content img{
+    width: 60vw; 
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.left-content{
+    background-color: var(--nave-light-blue);
+    z-index: 8;
+    opacity: .95;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border-radius: 4px;
+}
+
+.left-content:hover, .right-content img:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.left-content h3{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3rem;
+    color: var(--light-font-color-title);
+    text-align: left;
+}
+
+
+.left-content p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.3rem;
+    color: var(--light-font-color);
+    text-align: left;
+}
+
+.right-content{
+    margin-left: -150px;
+}
