@@ -21,6 +21,12 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(4, 69, 104, 0.831), rgb(40, 38, 38));
+}
 
 .intro-container{
     display: flex;
@@ -28,18 +34,21 @@ body{
     justify-content: flex-start;
     align-items: center;
     margin: 2%;
-    
+    margin-bottom: 6%;    
 }
 
-
 .title h1 {
-    color: var(--nave-light-blue);
+    color: var(--light-font-color-title);
     font-size: 4rem;
     letter-spacing: 4px;
     font-family: 'Shadows Into Light Two', cursive;
     transform: rotate(3deg);
-
+    z-index: 9
 }
+.title h1 span{
+    font-size: 5rem;
+}
+
 
 .left-content, .right-content{
     width: 45%;
@@ -65,7 +74,7 @@ body{
   border-radius: 4px;
 }
 
-.left-content:hover, .right-content img:hover{
+.left-content:hover, .right-content img:hover, .text-one:hover, .text-two:hover, .text-three:hover, .text-four:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
@@ -86,4 +95,212 @@ body{
 
 .right-content{
     margin-left: -150px;
+}
+
+/************************
+//      Text-Area
+**************************/
+
+.text-area{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 98%;
+    min-height: 100%;
+    margin: 3%;
+}
+
+.text-two, .text-three, .text-one{
+    display: flex;
+    flex-direction: row;
+    min-width: 50%;
+   min-height: 20%
+}
+
+
+/*******************
+//     Text One
+*********************/
+.text-one{
+    margin: 2%;
+    width: 80%;
+    background-color: var(--farting-yellow);
+    display: flex;
+    flex-direction: flex-end;
+    align-items: center;
+    align-content:flex-start;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.text-one .icon-holder{
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+}
+
+.text-one .text-holder{
+    width: 60%;
+    text-align: left;
+    padding: 10px;
+}
+
+.icon-holder i{
+    color: var(--nave-light-blue);
+    font-size: 13rem;
+} 
+
+.text-holder{
+    font-size: 2rem;
+    text-align: right;
+    letter-spacing: 2px;
+    color: var(--nave-light-blue)
+}
+
+.text-holder i{
+    color: var(--light-font-color)
+}
+
+/*******************
+//     Text Two
+*********************/
+
+.text-two{
+    margin: 2%;
+    margin-left: 22%;
+    width: 80%;
+    background-color: var(--nave-light-blue);
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: flex;
+    flex-direction: flex-end;
+    align-items: center;
+    align-content:flex-start;
+}
+
+.text-two .icon-holder{
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+.text-two .text-holder{
+    width: 70%;
+    text-align: left;
+    padding: 10px;
+}
+
+.text-two .icon-holder i{
+    color: var(--farting-yellow);
+    font-size: 11rem;
+} 
+
+.text-two .text-holder{
+    font-size: 2rem;
+    text-align: left;
+    letter-spacing: 2px;
+    padding-left: 80px;
+    color: var(--light-font-color)
+}
+
+.text-holder i{
+    color: var(--light-font-color)
+}
+
+
+/*******************
+//     Text Three
+*********************/
+
+.text-three{
+    margin: 2%;
+    width: 90%;
+    background-color: var(--farting-yellow);
+    display: flex;
+    flex-direction: flex-end;
+    align-items: center;
+    align-content:flex-start;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.text-three .icon-holder{
+    width: 35%;
+    text-align: center;
+    padding: 10px;
+}
+
+.text-three .text-holder{
+    width: 65%;
+    text-align: left;
+    padding: 10px;
+}
+
+.icon-holder i{
+    color: var(--nave-light-blue);
+    font-size: 13rem;
+} 
+
+.text-holder{
+    font-size: 2rem;
+    text-align: right;
+    letter-spacing: 2px;
+    color: var(--nave-light-blue)
+}
+
+.text-holder i{
+    color: var(--light-font-color)
+}
+
+/*******************
+//    Text Four
+*********************/
+
+.text-four{
+    margin: 2%;
+    margin-left: 10%;
+    width: 95%;
+    background-color: var(--nave-light-blue);
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: flex;
+    flex-direction: flex-end;
+    align-items: center;
+    align-content:flex-start;
+}
+
+.text-four .icon-holder{
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+.text-four .text-holder{
+    width: 70%;
+    text-align: left;
+    padding: 10px;
+}
+
+.text-four .icon-holder i{
+    color: var(--farting-yellow);
+    font-size: 13rem;
+} 
+
+.text-four .text-holder{
+    font-size: 2rem;
+    text-align: left;
+    letter-spacing: 2px;
+    padding-left: 60px;
+    color: var(--light-font-color)
+}
+.text-four .text-holder span{
+    color: var(--farting-yellow);
+}
+
+
+.text-holder i{
+    color: var(--light-font-color)
 }
