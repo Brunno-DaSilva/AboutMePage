@@ -8,6 +8,7 @@
   --laranja-orange: #ed553b;
   --light-font-color: #e5f2fc;
   --light-font-color-title: #c9dded;
+  --gray-neutral-color: #63717d;
 }
 body {
   margin: 0;
@@ -310,11 +311,11 @@ body {
   color: var(--light-font-color);
 }
 
-/*******************
-//    Projects
-*********************/
+/*************************
+//      Projects
+**************************/
 .sub-title h1 {
-  color: var(--nave-light-blue);
+  color: var(--light-font-color-title);
   font-size: 3.8rem;
   letter-spacing: 4px;
   font-family: "Shadows Into Light Two", cursive;
@@ -359,30 +360,53 @@ body {
   grid-area: stats;
 }
 
-.card-image {
+.card-image-one {
   grid-area: image;
-  background: url("https://res.cloudinary.com/duprwuo4j/image/upload/v1578351044/imgs_starwars/imgs/ezgif.com-video-to-gif_3_dwxv1o.gif");
+  background: url("https://res.cloudinary.com/duprwuo4j/image/upload/v1578631292/imgs_starwars/imgs/Screen_Shot_2020-01-09_at_10.38.44_PM_oifmsp.png");
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
+  border-bottom: 2px solid var(--laranja-orange);
+}
+.card-image-two {
+  grid-area: image;
+  background: url("https://res.cloudinary.com/duprwuo4j/image/upload/v1578630368/imgs_starwars/imgs/homepage_keiigd_mvgav0.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  border-bottom: 2px solid var(--laranja-orange);
+}
+.card-image-three {
+  grid-area: image;
+  background: url("https://res.cloudinary.com/duprwuo4j/image/upload/v1578632397/imgs_starwars/imgs/Screen_Shot_2020-01-09_at_10.59.32_PM_ahafvc.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  border-bottom: 2px solid var(--laranja-orange);
 }
 
 .card-text {
   grid-area: text;
   margin: 25px;
 }
-.card-text .date {
-  color: rgb(255, 7, 110);
+.card-text span a {
+  text-decoration: none;
+  color: var(--laranja-orange);
   font-size: 13px;
 }
+.card-text span a:hover {
+  cursor: pointer;
+}
+
 .card-text p {
-  color: grey;
+  color: var(--gray-neutral-color);
   font-size: 15px;
   font-weight: 300;
 }
 .card-text h2 {
   margin-top: 0px;
   font-size: 28px;
+  color: var(--gray-neutral-color);
 }
 
 .card-stats {
@@ -392,7 +416,7 @@ body {
   grid-template-rows: 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: rgb(255, 7, 110);
+  background: var(--laranja-orange);
 }
 
 .card-stats .stat {
@@ -400,6 +424,32 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
+  color: var(--light-font-color);
   padding: 10px;
+}
+
+/*******************************
+*     Footer and SVG
+*******************************/
+svg {
+  margin-bottom: -35px;
+  z-index: 5;
+}
+footer {
+  font-family: "Shadows Into Light Two", cursive;
+  min-height: 30vh;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: auto;
+  background-color: var(--nave-light-blue);
+  z-index: 6;
+}
+
+footer span {
+  color: var(--farting-yellow);
+}
+footer img {
+  width: 90px;
+  height: auto;
 }
