@@ -1,35 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+
 :root {
-  --dark-font-color-title: #173f5f;
-  --nave-light-blue: #20639b;
+  --main-bg: #343d46;
+  --color-light: #f7f4f4;
+  --color-light-gray: #a7adba;
+  --color-title: #6a7687;
+  --color-steal-blue: #9dc1d9;
+  --details-light-blue: #bee0ea;
+
+  /*CSS Variables to be altered*/
+  --base: #22315e;
+  --spacing: 10px;
+  --blur: 10px;
+  --grayscale: 20%;
+  --dark-font-color-title: #22315e;
+  --nave-light-blue: #22315e;
   --teal-green: #3caea3;
-  --farting-yellow: #f6d55c;
+  --farting-yellow: #f8d865;
   --laranja-orange: #ed553b;
   --light-font-color: #e5f2fc;
   --light-font-color-title: #c9dded;
   --gray-neutral-color: #63717d;
 }
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Titillium Web", sans-serif;
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.container {
+.container-about {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.overlay {
+.overlay-about {
   position: absolute;
   width: 100%;
   min-height: 120%;
-  background-image: radial-gradient(rgba(4, 69, 104, 0.831), rgb(40, 38, 38));
+  background-image: radial-gradient(rgba(4, 69, 104, 0.467), rgb(40, 38, 38));
 }
 
-.intro-container {
+.span-one {
+  color: #f6d55c;
+  text-decoration: underline;
+}
+.span-two {
+  color: #c9dded;
+}
+.intro-container-about {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -38,15 +60,16 @@ body {
   margin-bottom: 6%;
 }
 
-.title h1 {
+.title-about h1 {
   color: var(--light-font-color-title);
   font-size: 4rem;
   letter-spacing: 4px;
+  margin-top: 5rem;
   font-family: "Shadows Into Light Two", cursive;
   transform: rotate(3deg);
   z-index: 9;
 }
-.title h1 span {
+.title-about h1 span {
   font-size: 5rem;
 }
 
@@ -366,7 +389,7 @@ body {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
-  border-bottom: 2px solid var(--laranja-orange);
+  border-bottom: 2px solid var(--base);
 }
 .card-image-two {
   grid-area: image;
@@ -374,7 +397,7 @@ body {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
-  border-bottom: 2px solid var(--laranja-orange);
+  border-bottom: 2px solid var(--base);
 }
 .card-image-three {
   grid-area: image;
@@ -382,7 +405,16 @@ body {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
-  border-bottom: 2px solid var(--laranja-orange);
+  border-bottom: 2px solid var(--base);
+}
+
+.card-image-four {
+  grid-area: image;
+  background: url("https://res.cloudinary.com/duprwuo4j/image/upload/v1581056656/imgs_starwars/imgs/Screen_Shot_2020-02-07_at_12.23.55_AM_nd7tp5.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  border-bottom: 2px solid var(--base);
 }
 
 .card-text {
@@ -416,7 +448,7 @@ body {
   grid-template-rows: 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: var(--laranja-orange);
+  background: var(--base);
 }
 
 .card-stats .stat {
@@ -428,53 +460,9 @@ body {
   padding: 10px;
 }
 
-/*******************************
-*     Footer and SVG
-*******************************/
-svg {
-  margin-bottom: -35px;
-  z-index: 5;
-}
-footer {
-  font-family: "Shadows Into Light Two", cursive;
-  min-height: 30vh;
-  color: white;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: auto;
-  background-color: var(--nave-light-blue);
-  z-index: 6;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-}
+/*About this App override*/
 
-footer span {
-  color: var(--farting-yellow);
-}
-footer img {
-  width: 90px;
+#img2 {
+  width: 100%;
   height: auto;
-}
-
-footer .info-Bruno {
-  width: 70%;
-  padding: 20px;
-  text-align: center;
-}
-
-.info-Bruno p {
-  color: var(--light-font-color-title);
-  font-size: 1.8rem;
-}
-
-.info-Bruno a {
-  color: var(--light-font-color-title);
-  padding: 10px;
-}
-
-.info-Bruno a:hover {
-  color: var(--farting-yellow);
 }
