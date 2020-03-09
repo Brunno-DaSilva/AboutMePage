@@ -25,6 +25,13 @@
   --gray-neutral-color: #63717d;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 section {
   display: flex;
   flex-direction: column;
@@ -41,7 +48,7 @@ section {
   position: absolute;
   width: 100%;
   min-height: 120%;
-  background-image: radial-gradient(rgba(4, 69, 104, 0.467), rgb(40, 38, 38));
+  background-image: radial-gradient(rgba(4, 69, 104, 0.467), rgb(2, 45, 68));
 }
 
 .span-one {
