@@ -3,9 +3,6 @@
 
 ## Tools:
 
-*HTML,
-*CSS: flex-box
-
 ```
   1- HTML
   2 - CSS
